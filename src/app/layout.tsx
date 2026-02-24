@@ -15,14 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
-      <body className="antialiased bg-[#0B0F19] text-white selection:bg-primary/30">
+    <html lang="en" className="dark scroll-smooth overflow-x-hidden" suppressHydrationWarning>
+      <body className="antialiased bg-background text-white selection:bg-primary/30 overflow-x-hidden">
         <QueryProvider>
           <div className="flex min-h-screen">
             <Sidebar />
             <div className="flex flex-1 flex-col md:pl-64">
               <Header />
-              <main className="flex-1 p-8">
+              <main className="flex-1 p-4 md:p-8">
                 {children}
               </main>
             </div>

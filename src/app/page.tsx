@@ -3,11 +3,11 @@ import InventoryView from "@/components/inventory/InventoryView";
 export default function Home() {
   return (
     <div className="space-y-12">
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary/20 to-transparent p-12 border border-primary/10">
+      <section className="relative overflow-hidden rounded-3xl bg-linear-to-br from-primary/20 to-transparent p-6 sm:p-12 border border-primary/10">
         <div className="relative z-10 max-w-2xl">
-          <h1 className="text-5xl font-black tracking-tighter text-white md:text-7xl">
+          <h1 className="text-4xl sm:text-5xl font-black tracking-tighter text-white md:text-7xl">
             PRECISION <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#A8F5E8]">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-accent">
               ENGINEERING.
             </span>
           </h1>

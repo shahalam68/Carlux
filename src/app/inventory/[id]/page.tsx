@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { inventoryService } from "@/services/inventory.service";
@@ -57,7 +58,7 @@ export default function VehicleDetailsPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 {/* Left: Image Hero */}
                 <div className="relative group">
-                    <div className="absolute -inset-1 rounded-3xl bg-linear-to-br from-primary to-[#A8F5E8] opacity-20 blur-xl"></div>
+                    <div className="absolute -inset-1 rounded-3xl bg-linear-to-br from-primary to-accent opacity-20 blur-xl"></div>
                     <div className="relative aspect-16/10 overflow-hidden rounded-3xl border border-white/10 bg-black/40 shadow-2xl">
                         <Image
                             src={vehicle.thumbnail}
@@ -79,7 +80,7 @@ export default function VehicleDetailsPage() {
                 {/* Right: Info */}
                 <div className="flex flex-col">
                     <div className="flex items-center justify-between">
-                        <span className="text-sm font-black uppercase tracking-[0.2em] text-[#A8F5E8]">
+                        <span className="text-sm font-black uppercase tracking-[0.2em] text-accent">
                             {vehicle.brand}
                         </span>
                         <div className="flex items-center gap-1 rounded-full bg-[#FF7A5C]/10 px-3 py-1 text-xs font-bold text-[#FF7A5C] border border-[#FF7A5C]/20">
@@ -90,7 +91,7 @@ export default function VehicleDetailsPage() {
 
                     <h1 className="mt-4 text-5xl font-black text-white italic tracking-tighter shrink-0">
                         {vehicle.title.split(' ').map((word, i) => (
-                            <span key={i} className={i % 2 !== 0 ? "text-transparent bg-clip-text bg-gradient-to-r from-[#6B5CE6] to-[#A8F5E8]" : ""}>
+                            <span key={i} className={i % 2 !== 0 ? "text-transparent bg-clip-text bg-linear-to-r from-primary to-accent" : ""}>
                                 {word}{' '}
                             </span>
                         ))}

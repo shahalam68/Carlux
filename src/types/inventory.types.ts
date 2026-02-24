@@ -24,7 +24,10 @@ export interface InventoryState {
     searchQuery: string;
     sortBy: SortOrder;
     viewType: ViewType;
+    isSidebarOpen: boolean;
     setSearchQuery: (query: string) => void;
     setSortBy: (sort: SortOrder) => void;
     setViewType: (view: ViewType) => void;
+    setSidebarOpen: (isOpen: boolean) => void;
+    toggleSidebar: () => void;
 }
