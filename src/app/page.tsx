@@ -1,4 +1,4 @@
-import ProductGrid from "@/components/ProductGrid";
+import InventoryView from "@/components/inventory/InventoryView";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       </section>
 
       <section id="inventory">
-        <ProductGrid />
+        <InventoryView />
       </section>
     </div>
   );
