@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import QueryProvider from "@/providers/query-provider";
 import type { Metadata } from "next";
 import "./globals.css";
+import QueryProvider from "@/providers/query-provider";
 
 export const metadata: Metadata = {
   title: "Carlux Dashboard",

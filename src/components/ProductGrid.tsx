@@ -60,13 +60,13 @@ export default function ProductGrid() {
 
                 <div className="flex items-center gap-4">
                     <select
-                        className="rounded-lg bg-white/5 border border-white/5 px-4 py-2 text-xs font-medium text-white outline-none focus:border-[#6B5CE6]/50 transition-colors appearance-none cursor-pointer"
+                        className="rounded-lg bg-[#0B0F19] border border-white/5 px-4 py-2 text-xs font-medium text-white outline-none focus:border-[#6B5CE6]/50 transition-colors cursor-pointer"
                         value={sortBy}
                         onChange={(e) => setSortBy(e.target.value as any)}
                     >
-                        <option value="none">Sort by: Default</option>
-                        <option value="price_asc">Price: Low to High</option>
-                        <option value="price_desc">Price: High to Low</option>
+                        <option value="none" className="bg-[#0B0F19]">Sort by: Default</option>
+                        <option value="price_asc" className="bg-[#0B0F19]">Price: Low to High</option>
+                        <option value="price_desc" className="bg-[#0B0F19]">Price: High to Low</option>
                     </select>
 
                     <span className="text-xs font-medium text-gray-400 bg-white/5 px-3 py-2 rounded-lg border border-white/5">
