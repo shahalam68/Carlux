@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth overflow-x-hidden" suppressHydrationWarning>
-      <body className="antialiased bg-background text-white selection:bg-primary/30 overflow-x-hidden">
+    <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
+      <body className="antialiased bg-background text-white selection:bg-primary/30">
         <QueryProvider>
           <div className="flex min-h-screen">
             <Sidebar />

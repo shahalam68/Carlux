@@ -46,7 +46,6 @@ export default function VehicleDetailsPage() {
 
     return (
         <div className="max-w-7xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            {/* Breadcrumbs & Back */}
             <Link
                 href="/"
                 className="inline-flex items-center gap-2 rounded-xl bg-white/5 px-4 py-2 text-xs font-bold text-gray-400 transition-all hover:bg-white/10 hover:text-white"
@@ -56,7 +55,6 @@ export default function VehicleDetailsPage() {
             </Link>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                {/* Left: Image Hero */}
                 <div className="relative group">
                     <div className="absolute -inset-1 rounded-3xl bg-linear-to-br from-primary to-accent opacity-20 blur-xl"></div>
                     <div className="relative aspect-16/10 overflow-hidden rounded-3xl border border-white/10 bg-black/40 shadow-2xl">
@@ -69,7 +67,6 @@ export default function VehicleDetailsPage() {
                         />
                     </div>
 
-                    {/* Tag Overlay */}
                     <div className="absolute top-6 left-6 flex gap-2">
                         <span className="rounded-full bg-black/50 backdrop-blur-md border border-white/10 px-4 py-1.5 text-[10px] font-black uppercase tracking-widest text-white">
                             Limited Edition
@@ -77,7 +74,6 @@ export default function VehicleDetailsPage() {
                     </div>
                 </div>
 
-                {/* Right: Info */}
                 <div className="flex flex-col">
                     <div className="flex items-center justify-between">
                         <span className="text-sm font-black uppercase tracking-[0.2em] text-accent">
@@ -106,7 +102,6 @@ export default function VehicleDetailsPage() {
                         {vehicle.description || "Experimental prototype engineering with zero compromise on performance and aesthetics. A true masterpiece of automotive design."}
                     </p>
 
-                    {/* Quick Specs */}
                     <div className="mt-12 grid grid-cols-2 gap-4">
                         <SpecItem icon={Zap} label="Performance" value="High Output" />
                         <SpecItem icon={Fuel} label="Drivetrain" value="Synchronized" />
@@ -125,7 +120,6 @@ export default function VehicleDetailsPage() {
                 </div>
             </div>
 
-            {/* Experimental Specs Section */}
             <section className="mt-24 rounded-3xl border border-white/5 bg-white/5 p-12 relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-12 text-white/5">
                     <Car size={300} strokeWidth={0.5} />

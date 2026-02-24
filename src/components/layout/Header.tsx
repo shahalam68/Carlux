@@ -8,7 +8,7 @@ export default function Header() {
 
     return (
         <header className="sticky top-0 z-30 flex h-16 w-full items-center justify-between border-b border-white/5 bg-[#0B0F19]/50 px-3 md:px-8 backdrop-blur-xl gap-2 md:gap-4">
-            {/* Hamburger & Search */}
+            
             <div className="flex flex-1 items-center gap-2 md:gap-4 overflow-hidden">
                 <button
                     onClick={toggleSidebar}
@@ -28,8 +28,6 @@ export default function Header() {
                     />
                 </div>
             </div>
-
-            {/* Profile & Notifications */}
             <div className="flex items-center gap-2 md:gap-4">
                 <button className="relative rounded-full p-2 text-gray-400 transition-colors hover:bg-white/5 hover:text-white">
                     <Bell className="h-5 w-5" />

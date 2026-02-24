@@ -16,7 +16,6 @@ export default function Home() {
             luxury automotive inventory with zero friction.
           </p>
         </div>
-        {/* Glow effect */}
         <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-primary/10 blur-[100px]"></div>
       </section>
 
