@@ -1,3 +1,6 @@
+import Header from "@/components/Header";
+import Sidebar from "@/components/Sidebar";
+import QueryProvider from "@/providers/query-provider";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -12,9 +15,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased bg-black text-white">
-        {children}
+    <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
+      <body className="antialiased bg-[#0B0F19] text-white selection:bg-[#6B5CE6]/30">
+        <QueryProvider>
+          <div className="flex min-h-screen">
+            <Sidebar />
+            <div className="flex flex-1 flex-col md:pl-64">
+              <Header />
+              <main className="flex-1 p-8">
+                {children}
+              </main>
+            </div>
+          </div>
+        </QueryProvider>
       </body>
     </html>
   );
