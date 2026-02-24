@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <header className="sticky top-0 z-30 flex h-16 w-full items-center justify-between border-b border-white/5 bg-[#0B0F19]/50 px-8 backdrop-blur-xl">
             {/* Search Bar */}
-            <div className="flex w-full max-w-md items-center gap-3 rounded-full bg-white/5 px-4 py-2 border border-white/5 focus-within:border-[#6B5CE6]/50 transition-colors">
+            <div className="flex w-full max-w-md items-center gap-3 rounded-full bg-white/5 px-4 py-2 border border-white/5 focus-within:border-primary/50 transition-colors">
                 <Search className="h-4 w-4 text-gray-500" />
                 <input
                     type="text"
@@ -32,7 +32,7 @@ export default function Header() {
                         <p className="text-sm font-medium text-white">John Doe</p>
                         <p className="text-xs text-gray-500">Administrator</p>
                     </div>
-                    <div className="h-9 w-9 rounded-full bg-gradient-to-br from-[#6B5CE6] to-[#A8F5E8] flex items-center justify-center border border-white/10">
+                    <div className="h-9 w-9 rounded-full bg-gradient-to-br from-primary to-[#A8F5E8] flex items-center justify-center border border-white/10">
                         <User className="h-5 w-5 text-white" />
                     </div>
                 </div>

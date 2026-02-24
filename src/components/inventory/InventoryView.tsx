@@ -49,7 +49,7 @@ export default function InventoryView() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div>
                     <h2 className="text-2xl font-black text-white tracking-tight uppercase italic">
-                        AVAILABLE <span className="text-[#6B5CE6]">INVENTORY</span>
+                        AVAILABLE <span className="text-primary">INVENTORY</span>
                     </h2>
                     <p className="text-xs text-gray-500 mt-1">Showing {filteredCount} of {totalCount} performance vehicles</p>
                 </div>
@@ -60,7 +60,7 @@ export default function InventoryView() {
                     <div className="h-6 w-px bg-white/10 hidden sm:block"></div>
 
                     <select
-                        className="rounded-lg bg-[#0B0F19] border border-white/5 px-4 py-2 text-xs font-medium text-white outline-none focus:border-[#6B5CE6]/50 transition-colors cursor-pointer"
+                        className="rounded-lg bg-[#0B0F19] border border-white/5 px-4 py-2 text-xs font-medium text-white outline-none focus:border-primary/50 transition-colors cursor-pointer"
                         value={sortBy}
                         onChange={(e) => setSortBy(e.target.value as any)}
                     >

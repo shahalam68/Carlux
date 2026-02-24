@@ -14,8 +14,8 @@ export default function ViewToggle({ viewType, onViewChange }: ViewToggleProps) 
             <button
                 onClick={() => onViewChange("grid")}
                 className={`rounded-md p-1.5 transition-all ${viewType === "grid"
-                        ? "bg-[#6B5CE6] text-white shadow-lg"
-                        : "text-gray-400 hover:text-white"
+                    ? "bg-primary text-white shadow-lg"
+                    : "text-gray-400 hover:text-white"
                     }`}
                 title="Grid View"
             >
@@ -24,8 +24,8 @@ export default function ViewToggle({ viewType, onViewChange }: ViewToggleProps) 
             <button
                 onClick={() => onViewChange("list")}
                 className={`rounded-md p-1.5 transition-all ${viewType === "list"
-                        ? "bg-[#6B5CE6] text-white shadow-lg"
-                        : "text-gray-400 hover:text-white"
+                    ? "bg-primary text-white shadow-lg"
+                    : "text-gray-400 hover:text-white"
                     }`}
                 title="List View"
             >

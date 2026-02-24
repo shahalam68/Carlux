@@ -12,7 +12,7 @@ export const useInventory = () => {
         viewType,
         setViewType,
         setSortBy,
-        setSearchQuery
+        setSearchQuery,
     } = useInventoryStore();
 
     const { data, isLoading, isError, error, refetch } = useQuery({

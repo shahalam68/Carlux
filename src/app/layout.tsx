@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
-      <body className="antialiased bg-[#0B0F19] text-white selection:bg-[#6B5CE6]/30">
+      <body className="antialiased bg-[#0B0F19] text-white selection:bg-primary/30">
         <QueryProvider>
           <div className="flex min-h-screen">
             <Sidebar />

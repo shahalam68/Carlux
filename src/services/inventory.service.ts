@@ -21,7 +21,7 @@ export const inventoryService = {
     /**
      * Can be extended for other categories or single products
      */
-    async getProductById(id: number): Promise<Product> {
+    async getProductById(id: number | string): Promise<Product> {
         const response = await fetch(`${API_BASE_URL}/products/${id}`);
 
         if (!response.ok) {

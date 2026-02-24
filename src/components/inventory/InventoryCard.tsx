@@ -3,6 +3,7 @@
 import { Product } from "@/types/inventory.types";
 import { Star } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface InventoryCardProps {
     product: Product;
@@ -10,7 +11,7 @@ interface InventoryCardProps {
 
 export default function InventoryCard({ product }: InventoryCardProps) {
     return (
-        <div className="group relative rounded-2xl border border-white/5 bg-white/5 p-4 transition-all hover:border-[#6B5CE6]/30 hover:bg-white/10">
+        <div className="group relative rounded-2xl border border-white/5 bg-white/5 p-4 transition-all hover:border-primary/30 hover:bg-white/10">
             <div className="aspect-[16/10] overflow-hidden rounded-xl bg-black/40">
                 <Image
                     src={product.thumbnail}
@@ -32,7 +33,7 @@ export default function InventoryCard({ product }: InventoryCardProps) {
                     </div>
                 </div>
 
-                <h3 className="mt-2 text-lg font-bold text-white transition-colors group-hover:text-[#6B5CE6]">
+                <h3 className="mt-2 text-lg font-bold text-white transition-colors group-hover:text-primary">
                     {product.title}
                 </h3>
 
@@ -43,9 +44,12 @@ export default function InventoryCard({ product }: InventoryCardProps) {
                             ${product.price.toLocaleString()}
                         </span>
                     </div>
-                    <button className="rounded-lg bg-[#6B5CE6] px-4 py-2 text-xs font-bold text-white transition-transform active:scale-95 hover:bg-[#6B5CE6]/90 shadow-[0_4px_10px_rgba(107,92,230,0.3)]">
+                    <Link
+                        href={`/inventory/${product.id}`}
+                        className="rounded-lg bg-primary px-4 py-2 text-xs font-bold text-white transition-transform active:scale-95 hover:bg-primary/90 shadow-[0_4px_10px_rgba(107,92,230,0.3)]"
+                    >
                         View Details
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

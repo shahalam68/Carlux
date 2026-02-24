@@ -3,6 +3,7 @@
 import { Product } from "@/types/inventory.types";
 import { Star } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface InventoryTableProps {
     products: Product[];
@@ -35,7 +36,7 @@ export default function InventoryTable({ products }: InventoryTableProps) {
                                             className="h-full w-full object-cover"
                                         />
                                     </div>
-                                    <span className="font-bold group-hover:text-[#6B5CE6] transition-colors">
+                                    <span className="font-bold group-hover:text-primary transition-colors">
                                         {product.title}
                                     </span>
                                 </div>
@@ -53,9 +54,12 @@ export default function InventoryTable({ products }: InventoryTableProps) {
                                 <span className="text-lg font-black">${product.price.toLocaleString()}</span>
                             </td>
                             <td className="px-6 py-4 text-right">
-                                <button className="rounded-lg bg-white/5 border border-white/10 px-4 py-2 text-xs font-bold text-white transition-all hover:bg-[#6B5CE6] hover:border-[#6B5CE6]/50">
+                                <Link
+                                    href={`/inventory/${product.id}`}
+                                    className="rounded-lg bg-white/5 border border-white/10 px-4 py-2 text-xs font-bold text-white transition-all hover:bg-primary hover:border-primary/50"
+                                >
                                     Details
-                                </button>
+                                </Link>
                             </td>
                         </tr>
                     ))}
